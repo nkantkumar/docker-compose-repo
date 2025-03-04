@@ -48,7 +48,7 @@ services:
       KAFKA_BROKERCONNECT: "kafka1:29092,kafka2:29093"
       JVM_OPTS: "-Xms16M -Xmx512M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
     ports:
-      - 9000:9000
+      - 9999:9999
     depends_on:
       - kafka1
       - kafka2
